@@ -31,21 +31,17 @@
          void MaxNumber(int numberG, int numberN, int numberC)
          {
            int max = numberG;
-            if(numberG < numberN)
+            if(max < numberN)
             {
                 max = numberN;
-                Console.WriteLine($"Максимальное число: {max}");
+               
             }
-            else if (max < numberC)
+            if (max < numberC)
             {
                 max = numberC;
-                Console.WriteLine($"Максимальное число: {max}");
+                
             }
-            else 
-            {
-                Console.WriteLine($"Максимальное число: {max}");
-            }
-           
+           Console.WriteLine($"Максимальное число: {max}");
             
          }
          //Задача 6: Напишите программу, которая на вход принимает число и выдаёт, 
