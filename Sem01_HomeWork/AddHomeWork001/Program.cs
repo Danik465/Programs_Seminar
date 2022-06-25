@@ -34,41 +34,44 @@
         
         }
 
-
+        Console.WriteLine("---------");
         Console.WriteLine("Задача 3");
         //Задача 3. На ввод подаётся рост трёх спортсменов.
         // Расположить их от большего к меньшему.
-    //int[] array = {9, 6, 15};
-       
         
-      //  int index = 0;
-    // int secInd = 0;
-       // int temp = 0;
-       
-        //while (index < array.Length)
-        //{
-          //  while (secInd < array.Length-1)
-            //{
-              //  if (array[index] < array[secInd])
-                //{
-                  //  temp = array[index] ;
-                    //array[index] = array[secInd];
-                    //array[secInd] = temp;
-                    
-               //}
-            //secInd++;
-             
-           // }
-        //index++;
         
-      //  }
-       // Console.Write(array[index] + " ");
+        int[] array = {292, 98, 767};
+        int n = array.Length;
+        int temp = 0;
+
+    
+
+      for (int index = 0; index < n; index++)
+      { 
+        for (int j = 0; j < n-1; j++)
+        {
+         if (array[j]> array[j+1])
+          {
+            temp = array[j];
+            array[j] = array[j+1];
+            array[j+1] = temp;
+
+          } 
+        }
+      }
+
+      for (int i = n-1; i >= 0; i--){
+        Console.Write(array[i] + " ");
+        }
+
+       Console.WriteLine();
 
         //Задача 4. Дано N секунд. Вывести время в формате часы:минуты:секунды.
         //N = 72334 -> 20:5:34 
+        Console.WriteLine("---------");
         Console.WriteLine("Задача 4");
 
-        int Time = 119;
+        int Time = 72335;
         int Hours = Time/3600;
         int Minutes = (Time % 1000)/60;
         int seconds =  Time%100;
