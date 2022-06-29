@@ -7,7 +7,7 @@
 
         
 
-        Zadach13("3127");
+        Zadach13("3107");
       
         void Zadach13(string currentNumber)
         {
