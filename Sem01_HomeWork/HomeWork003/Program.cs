@@ -9,10 +9,12 @@
 
         void Zadacha19(int numb)
         {
-            if (numb/10000 >= 1 && numb/10000 <= 9 )
+            int N = numb/10000;
+            int N1 = numb/1000%10;
+            if (N >= 1 && N <= 9 )
             {
-                if (numb/10000 == numb%10 && numb/1000%10 == numb/10%10) {Console.WriteLine("Число - Палиндром");}
-                else if (numb/10000 != numb%10 || numb/1000%10 != numb/10%10)
+                if (N == numb%10 && N1 == numb/10%10) {Console.WriteLine("Число - Палиндром");}
+                else if (N != numb%10 || N1 != numb/10%10)
                     {Console.WriteLine("Число не является палиндромом");}
             }
             else  {Console.WriteLine("Число не пятизначное");}
