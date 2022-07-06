@@ -2,6 +2,70 @@
 {
     private static void Main(string[] args)
     {
+
+        //Задача 1. На вход подаётся натуральное десятичное число. Проверьте,
+// является ли оно палиндромом в двоичной записи.
+    string DoubleForm(string numb)
+     {
+       int n = 0;
+       string binary = "";
+       n = Convert.ToInt32(numb);
+       while(0< n)
+       {
+         binary = binary + Convert.ToString(n%2);
+         n = n/2;
+       }
+       return binary;
+     }
+   
+    string DoubleFormReverse(string numb)
+    {
+        string binary2 = "";
+
+        
+        for (int i = numb.Length-1; i >= 0; i--)
+        {
+            binary2  = binary2 + numb[i];
+        }
+        return binary2;
+    }
+    
+    EnterNumb();
+    void EnterNumb()
+    {
+      Console.WriteLine("Введите число");
+      string number = Console.ReadLine();
+      string bin = DoubleForm(number);
+      Console.WriteLine($"Число {number} в двоичной системе - {DoubleFormReverse(bin)}");
+      Palindrome(bin);
+    }
+    
+  void Palindrome(string numb)
+  {
+    int i = 0;
+    int len = numb.Length-1;
+    int len1 = len; 
+    while(len/2> i)
+        {
+            if(numb[i] == numb[len1])
+            {
+                i++;
+                len1= len1 - 1;
+            }
+            else 
+            {
+                Console.WriteLine("Не палиндром");
+                break;
+            }
+        }
+       if (len/2 <= i) {Console.WriteLine("Палиндром");}            
+    
+  }
+
+
+
+
+
          // Задача 3. Массив на 100 элементов задаётся случайными числами от 1 до 99. Определите самый часто встречающийся элемент в массиве. 
          //Если таких элементов несколько, вывести их все.
     Random rand = new Random();
@@ -59,8 +123,8 @@
                 }
             return arr1;
         }
-    //Задача 2. Напишите метод, который заполняет массив случайным количеством (от 1 до 100) нулей и единиц.
-    // Размер массива должен совпадать с квадратом количества единиц в нём.
+    // //Задача 2. Напишите метод, который заполняет массив случайным количеством (от 1 до 100) нулей и единиц.
+    // // Размер массива должен совпадать с квадратом количества единиц в нём.
   
        int[] massiv = new int[10];
        int[] CreateArray(int[] arr)
@@ -98,5 +162,11 @@
        Console.WriteLine();
        Console.WriteLine(sum);
        Console.WriteLine(LengthMass(massiv));
+      
+
+
+
     }
+
+    
 }
