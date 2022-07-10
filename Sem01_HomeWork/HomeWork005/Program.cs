@@ -2,7 +2,7 @@
 {
     private static void Main(string[] args)
     {
-         // Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. 
+        // Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. 
         // Напишите программу, которая покажет количество чётных чисел в массиве.
         // [345, 897, 568, 234] -> 2
 
@@ -12,10 +12,7 @@
                 Console.WriteLine("Какой длины будет массив?");
                 int length = Convert.ToInt32(Console.ReadLine());
                 int[] array = new int[length];
-                Console.WriteLine("Укажите диапазон разброса чисел");
-                int start = Convert.ToInt32(Console.ReadLine());
-                int finish = Convert.ToInt32(Console.ReadLine());
-                CreateArray(array, start, finish);
+                CreateArray(array, 100, 999);
                 PrintArray(array);
                 Console.WriteLine();
                  int count = Even(array);
