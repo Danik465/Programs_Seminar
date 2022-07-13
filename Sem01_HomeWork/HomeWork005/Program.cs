@@ -15,7 +15,7 @@
                 CreateArray(array, 100, 999);
                 PrintArray(array);
                 Console.WriteLine();
-                 int count = Even(array);
+                int count = Even(array);
                 Console.WriteLine($"Четных чисел в массиве - {count}");
             }
 
