@@ -27,14 +27,14 @@
         //  подсчитайте, сколько в поговорке гласных букв.
 
 
-        string str =  "без труда не выловишь и рыбку из пруда";
-        Console.WriteLine(Glass(str));
-        int Glass(string str)
-        {
+        // string str =  "без труда не выловишь и рыбку из пруда";
+        // Console.WriteLine(Glass(str));
+        // int Glass(string str)
+        // {
         
 
         
-        }
+        // }
 
     }
 }

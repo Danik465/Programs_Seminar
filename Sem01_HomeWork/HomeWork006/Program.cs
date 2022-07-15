@@ -27,7 +27,7 @@
         }
 
 
-       // Zadacha43();
+        Zadacha43();
          void Zadacha43()
          {
             Console.WriteLine("Введите b1:");
