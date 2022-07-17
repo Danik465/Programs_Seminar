@@ -8,7 +8,7 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
-       Zadacha47();
+       //Zadacha47();
         void Zadacha47()
         {
         Console.WriteLine("Введите количество строк");
@@ -70,12 +70,13 @@
         Console.WriteLine("Введите количество столбцов");
         int n = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("Введите элемент");
-        int element = Convert.ToInt32(Console.ReadLine());
+        int Row = Convert.ToInt32(Console.ReadLine());
+        int Colms = Convert.ToInt32(Console.ReadLine());
         
         int[,] DoubleArray = new  int[m,n];
         CreateIntArray(DoubleArray);
         PrintIntArray(DoubleArray); 
-        ElementInArray(DoubleArray, element);
+        ElementInArray(DoubleArray, Row,Colms);
         
         }
 
@@ -109,17 +110,17 @@
             return arr;
         }
 
-        void ElementInArray(int[,] arr, int elem)
+        void ElementInArray(int[,] arr, int Row, int Colms)
         {
             bool flag = false;
-
+         
             int m =  arr.GetLength(0);
             int n =  arr.GetLength(1);
             for (int i = 0; i <  m; i++)
             {
                  for (int j = 0; j <n; j++)
                 {
-                   if (arr[i,j] == elem)
+                   if (i  == Row && j == Colms)
                    {
                     flag = true;
                     break;
@@ -129,7 +130,7 @@
 
             if (flag == true)
             {
-                Console.WriteLine($"Элемент - {elem}, есть в массиве ");
+                Console.WriteLine($"Элемент - {arr[Row,Colms]}, есть в массиве ");
             }
             else {Console.WriteLine("Такого элемента нет в массиве");}  
         }
@@ -140,7 +141,7 @@
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-        Zadacha52();
+        //Zadacha52();
         void Zadacha52()
             {
             Console.WriteLine("Введите количество строк");
