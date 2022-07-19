@@ -8,7 +8,7 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
-       //Zadacha47();
+       Zadacha47();
         void Zadacha47()
         {
         Console.WriteLine("Введите количество строк");
