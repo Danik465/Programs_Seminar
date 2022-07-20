@@ -12,7 +12,7 @@
         // 1 2 4 7
         // 2 3 5 9
         // 2 4 4 8
-        // Zadacha54();
+         Zadacha54();
         void Zadacha54()
         {
             Random rand = new Random();
@@ -82,9 +82,9 @@
                     for (int k = 0; k < columns - 1; k++)
                     {
 
-                        if (arr[j, k] > arr[j, k + 1])
+                        if (arr[i, k] > arr[i, k + 1])
                         {
-                            (arr[j, k], arr[j, k + 1]) = (arr[j, k + 1], arr[j, k]);
+                            (arr[i, k], arr[i, k + 1]) = (arr[i, k + 1], arr[i, k]);
                         }
 
                     }
@@ -180,7 +180,7 @@
         // 10  9  8  7
 
 
-        Zadacha58();
+      //  Zadacha58();
         void Zadacha58()
         {
             Random random = new Random();
