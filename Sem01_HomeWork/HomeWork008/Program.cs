@@ -254,7 +254,7 @@
             }
             for (int i = rows; i >= 0; i--)
             {
-                int index6 = 14;
+                int index6 = 13;
                 for (int j = columns; j >= 0; j--)
                 {
                     
