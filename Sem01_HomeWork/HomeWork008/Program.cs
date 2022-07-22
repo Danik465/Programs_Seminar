@@ -12,7 +12,7 @@
         // 1 2 4 7
         // 2 3 5 9
         // 2 4 4 8
-         Zadacha54();
+        // Zadacha54();
         void Zadacha54()
         {
             Random rand = new Random();
@@ -104,7 +104,7 @@
         // 5 2 6 7
         // Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей
         //  суммой элементов: 1 строка
-        // Zadacha56();
+         Zadacha56();
         void Zadacha56()
         {
             Random random = new Random();
@@ -164,6 +164,7 @@
                 if (arr[i] < min)
                 {
                     min = arr[i];
+                    
                 }
             }
             return min;
